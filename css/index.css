@@ -25,7 +25,8 @@ main#fb-login {
 
 div#fb-text {
   display: flex;
-  height: 50%;
+  height: min-content;
+  margin: auto 0;
   flex-direction: column;
   gap: 1rem;
   justify-content: center; }
@@ -34,7 +35,8 @@ div#fb-text {
     font-size: 3rem;
     font-weight: 900; }
 div#fb-login-form {
-  height: 100%;
+  height: min-content;
+  margin: auto 0;
   display: flex;
   flex-direction: column;
   gap: 2rem; }
@@ -44,26 +46,43 @@ div#fb-login-form {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem; }
+    gap: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 3px 3px #dfe0e2; }
     div#fb-login-form form input {
       padding: 0.6rem;
       width: 100%;
       font-size: 0.7rem;
-      min-width: 21em; }
+      min-width: 25em;
+      border: 1px solid #ededed;
+      border-radius: 0.5rem; }
       div#fb-login-form form input[type="submit"], div#fb-login-form form input[type="button"] {
         text-align: center;
         font-weight: 700;
-        font-size: 1rem;
-        min-width: 0; }
+        min-width: 0;
+        border: none;
+        color: #fff;
+        cursor: pointer; }
+      div#fb-login-form form input[type="submit"] {
+        background-color: #1877f1;
+        font-size: 1rem; }
       div#fb-login-form form input[name="create"] {
+        background-color: #47b524;
+        font-size: 0.8rem;
         width: min-content;
         margin: 0 auto; }
+    div#fb-login-form form a {
+      text-decoration: none; }
     div#fb-login-form form hr {
-      border-bottom: 1px solid #ebebeb; }
+      border-bottom: 1px solid #ededed; }
 
 .txt-small {
   font-size: 0.5rem; }
 .txt-big {
   font-size: 1.5rem; }
+.txt-bold {
+  font-weight: 700; }
+.txt-center {
+  text-align: center; }
 
 /*# sourceMappingURL=index.css.map */
