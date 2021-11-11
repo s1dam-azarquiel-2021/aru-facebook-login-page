@@ -93,4 +93,12 @@ div {
 	&-big {
 		font-size: 1.5rem;
 	}
+
+	&-bold {
+		font-weight: 700;
+	}
+
+	&-center {
+		text-align: center;
+	}
 }
